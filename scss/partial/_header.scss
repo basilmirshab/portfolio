@@ -1,4 +1,50 @@
 .header {
-  color: black;
-  height: 200px;
+  .navbar {
+    background: #379683;
+    .navBar {
+      justify-content: center;
+
+      .navbar-nav {
+        .nav-item {
+          min-width: 300px;
+          .nav-link {
+            color: #05386b;
+            text-align: center;
+            font-weight: bold;
+            span {
+              position: relative;
+              &:after {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                height: 2px;
+                content: "";
+                width: 0;
+                background: #05386b;
+                transition: ease-in 0.2s;
+              }
+            }
+            &:hover {
+              span {
+                &:after {
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @include media-breakpoint-down(xl) {
+      .navBar {
+        justify-content: center;
+        .navbar-nav {
+          .nav-item {
+            min-width: 304px;
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,3 +1,7 @@
-//if you need to include a new scss file please use below format.
-@import "./partial/header";
 @import "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap");
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+// include  scss file please below
+@import "./base/base";
+@import "./partial/header";
+@import "./partial/home";

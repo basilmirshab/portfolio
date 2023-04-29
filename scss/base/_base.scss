@@ -1,0 +1,33 @@
+* {
+  font-family: "Roboto", sans-serif;
+  &:before,
+  &:after {
+    pointer-events: none;
+  }
+}
+
+html,
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+
+html {
+  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-rendering: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  font-weight: 400;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+main {
+  overflow-y: scroll;
+  padding-top: 56px;
+  background-color: #5cdb95;
+}
