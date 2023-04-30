@@ -15550,6 +15550,7 @@ body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
   background-color: #edf5e1;
+  color: #05386b;
 }
 
 html {
@@ -15571,8 +15572,66 @@ main {
   padding-top: 56px;
 }
 
+.socialapps {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+}
+.socialapps a {
+  height: 50px;
+  width: 50px;
+  border-radius: 10px 0;
+  border: 1px solid #05386b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  position: relative;
+}
+.socialapps a span {
+  position: relative;
+  z-index: 1;
+}
+.socialapps a:last-child {
+  margin-right: 0;
+}
+.socialapps a:after {
+  position: absolute;
+  border-radius: 9px 0;
+  width: 100%;
+  height: 0;
+  content: "";
+  z-index: 0;
+  transition: ease-in 0.2s;
+  bottom: 0;
+}
+.socialapps a:hover {
+  color: #edf5e1;
+}
+.socialapps a:hover:after {
+  height: 100%;
+}
+.socialapps a.facebook:after {
+  background: #3b5999;
+}
+.socialapps a.twitter:after {
+  background: #55acee;
+}
+.socialapps a.linkedIn:after {
+  background: #0077b5;
+}
+.socialapps a.gitHub:after {
+  background: #161b22;
+}
+.socialapps a.instagram:after {
+  background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+}
+
 .header .navbar {
   background: #379683;
+}
+.header .navbar .navbar-brand {
+  color: #edf5e1;
 }
 .header .navbar .navBar {
   justify-content: center;
@@ -15632,7 +15691,6 @@ main {
   max-height: 500px;
 }
 .banner .textArea {
-  color: #05386b;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -15649,12 +15707,12 @@ main {
 .banner .textArea .contact a:hover {
   color: #edf5e1;
 }
-.banner .textArea .contact .social {
+.banner .textArea .contact .socialapps {
   display: flex;
   flex-direction: row;
   padding-top: 20px;
 }
-.banner .textArea .contact .social a {
+.banner .textArea .contact .socialapps a {
   height: 50px;
   width: 50px;
   border-radius: 10px 0;
@@ -15665,14 +15723,14 @@ main {
   margin-right: 20px;
   position: relative;
 }
-.banner .textArea .contact .social a span {
+.banner .textArea .contact .socialapps a span {
   position: relative;
   z-index: 1;
 }
-.banner .textArea .contact .social a:last-child {
+.banner .textArea .contact .socialapps a:last-child {
   margin-right: 0;
 }
-.banner .textArea .contact .social a:after {
+.banner .textArea .contact .socialapps a:after {
   position: absolute;
   border-radius: 9px 0;
   width: 100%;
@@ -15682,25 +15740,25 @@ main {
   transition: ease-in 0.2s;
   bottom: 0;
 }
-.banner .textArea .contact .social a:hover {
+.banner .textArea .contact .socialapps a:hover {
   color: #edf5e1;
 }
-.banner .textArea .contact .social a:hover:after {
+.banner .textArea .contact .socialapps a:hover:after {
   height: 100%;
 }
-.banner .textArea .contact .social a.facebook:after {
+.banner .textArea .contact .socialapps a.facebook:after {
   background: #3b5999;
 }
-.banner .textArea .contact .social a.twitter:after {
+.banner .textArea .contact .socialapps a.twitter:after {
   background: #55acee;
 }
-.banner .textArea .contact .social a.linkedIn:after {
+.banner .textArea .contact .socialapps a.linkedIn:after {
   background: #0077b5;
 }
-.banner .textArea .contact .social a.gitHub:after {
+.banner .textArea .contact .socialapps a.gitHub:after {
   background: #161b22;
 }
-.banner .textArea .contact .social a.instagram:after {
+.banner .textArea .contact .socialapps a.instagram:after {
   background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
 }
 @media (max-width: 767.98px) {
@@ -15721,13 +15779,13 @@ main {
   min-height: 100dvh;
   display: flex;
   align-items: center;
-  color: #05386b;
   padding: 20px 0;
 }
 .skills .card {
   background: #8ee4af;
   height: 100%;
-  padding: 10px;
+  padding: 20px;
+  border-radius: 20px 0;
 }
 .skills .card .Pbars {
   margin: 20px 0;
@@ -15758,4 +15816,89 @@ main {
 }
 .skills .card .Pbars.react .progress-bar {
   width: 30%;
+}
+
+.experience {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  background-color: #5cdb95;
+}
+.experience .wrapBar {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+.experience .wrapBar .verticalBar {
+  position: absolute;
+  height: 70vh;
+  width: 5px;
+  top: 0;
+  left: 50%;
+  transform: translateY(-50%);
+}
+.experience .wrapBar .verticalBar span {
+  width: 100%;
+  height: 100%;
+  background-color: #edf5e1;
+  border-radius: 4px;
+  display: block;
+}
+.experience .wrapBar .verticalBar .points {
+  position: absolute;
+  border: 1px solid #05386b;
+  height: 15px;
+  width: 15px;
+  left: 49%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background: #05386b;
+}
+.experience .wrapBar .verticalBar .points .dtls {
+  position: absolute;
+  top: 50%;
+  min-width: 300px;
+  padding: 10px;
+  border-radius: 10px 0;
+  background: #edf5e1;
+  transform: translateY(-50%);
+}
+.experience .wrapBar .verticalBar .points.fst {
+  bottom: 20%;
+}
+.experience .wrapBar .verticalBar .points.scnd {
+  bottom: 50%;
+}
+.experience .wrapBar .verticalBar .points.thrd {
+  bottom: 80%;
+}
+.experience .wrapBar .verticalBar .points.lft .dtls {
+  right: 30px;
+}
+.experience .wrapBar .verticalBar .points.rigt .dtls {
+  left: 30px;
+}
+.experience .content .points {
+  padding: 20px;
+  margin: 30px 0;
+  background: #edf5e1;
+  color: #05386b;
+  border-radius: 20px 0;
+}
+.experience .content .points .dtls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer {
+  padding: 30px 0 0;
+}
+.footer .copyBar {
+  padding: 10px 0;
+  text-align: center;
+  background: #379683;
+  color: #edf5e1;
 }

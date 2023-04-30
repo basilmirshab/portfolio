@@ -3,12 +3,12 @@
   min-height: 100dvh;
   display: flex;
   align-items: center;
-  color: #05386b;
   padding: 20px 0;
   .card {
     background: #8ee4af;
     height: 100%;
-    padding: 10px;
+    padding: 20px;
+    border-radius: 20px 0;
     .Pbars {
       margin: 20px 0;
       .progress-bar {
