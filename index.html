@@ -39,15 +39,16 @@
 
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 wow animate__animated animate__fadeInLeft">
 
               <picture class="profile">
                 <img src="./images/picture.png" alt="">
               </picture>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 wow animate__animated animate__fadeInRight">
               <div class="textArea">
                 <div class="info">
+                  <span>Hi Folks, I am</span>
                   <h1>Basil Mirshab K</h1>
                   <h2>UI/UX Developer</h2>
                   <span>JavaScript | JQuery | SCSS | HTML | CSS</span>
@@ -56,12 +57,12 @@
                   <a href="tel:+919400890572" class="pb-2"><i class="bi bi-telephone"></i> 9400890572</a>
                   <a href="mailto:basilmirshabetr@gmail.com"><i class="bi bi-envelope"></i>
                     basilmirshabetr@gmail.com</a>
-                  <div class="social">
+                  <div class="social  wow animate__animated animate__flipInX" data-wow-delay="1s">
                     <a href="https://linkedin.com/in/basil-mirshab-k" class="btn linkedIn"><span><i
                           class="bi bi-linkedin"></i></span></a>
                     <a href="https://github.com/basilmirshab" class="btn gitHub"><span><i
                           class="bi bi-github"></i></span></a>
-                    <a href="https://www.instagram.com/basi1_mk/" class="btn instagram"><span><i
+                    <a href="https://www.instagram.com/basi1_mk" class="btn instagram"><span><i
                           class="bi bi-instagram"></i></span></a>
                     <a href="https://twitter.com/basilmirshab" class="btn twitter"><span><i
                           class="bi bi-twitter"></i></span></a>
@@ -74,11 +75,25 @@
 
         </div>
       </div>
+
     </div>
   </main>
   <script src="./js/vendor/jquery.min.js"></script>
   <script src="./js/vendor/popper.min.js"></script>
   <script src="./js/vendor/bootstrap.min.js"></script>
+  <script src="./js/vendor/wow.min.js"></script>
+  <script>
+    wow = new WOW(
+      {
+        boxClass: 'wow',      // default
+        animateClass: 'animated', // default
+        offset: 0,          // default
+        mobile: true,       // default
+        live: true        // default
+      }
+    )
+    wow.init();
+  </script>
 </body>
 
 </html>
