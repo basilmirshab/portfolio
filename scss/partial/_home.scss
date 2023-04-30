@@ -1,6 +1,6 @@
 .banner {
-  height: calc(100vh - 56px);
-  height: calc(100dvh - 56px);
+  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   background-color: #5cdb95;

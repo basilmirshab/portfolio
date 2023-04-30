@@ -1,0 +1,59 @@
+.skills {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  color: #05386b;
+  padding: 20px 0;
+  .card {
+    background: #8ee4af;
+    height: 100%;
+    padding: 10px;
+    .Pbars {
+      margin: 20px 0;
+      .progress-bar {
+        background-color: #05386b;
+      }
+      &.html {
+        .progress-bar {
+          width: 90%;
+        }
+      }
+      &.css {
+        .progress-bar {
+          width: 90%;
+        }
+      }
+      &.jquery {
+        .progress-bar {
+          width: 70%;
+        }
+      }
+      &.js {
+        .progress-bar {
+          width: 60%;
+        }
+      }
+      &.ps {
+        .progress-bar {
+          width: 40%;
+        }
+      }
+      &.figma {
+        .progress-bar {
+          width: 40%;
+        }
+      }
+      &.xd {
+        .progress-bar {
+          width: 30%;
+        }
+      }
+      &.react {
+        .progress-bar {
+          width: 30%;
+        }
+      }
+    }
+  }
+}
